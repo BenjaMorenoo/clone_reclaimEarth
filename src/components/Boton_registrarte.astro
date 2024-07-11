@@ -1,0 +1,19 @@
+---
+//crear un boton para iniciar sesion
+
+interface Props{
+    href: string;
+    titleButton: string;
+}
+const { href, titleButton } = Astro.props;
+--- 
+
+<a href={href}class="boton2 bg-blue-500 text-white font-normal py-2 px-4 rounded">
+    {titleButton}
+</a>
+
+<style>
+  .boton2:hover {
+    background-color: #0069D9;
+  }
+</style>
