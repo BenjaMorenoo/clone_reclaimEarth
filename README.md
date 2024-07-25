@@ -4,11 +4,21 @@ Mediante recompensas para usuarios activos, busca incentivar el reciclaje y
 la conciencia ambiental.
 
 Tecnologías utilizadas
+
 - Astro
 - TailwindCSS
 - TypeScript
 
 Avance del proyecto:
+
 - [x] Crear la estructura de carpetas
 - [x] Crear los componentes
 - [x] Crear el layout
+- [x] Componentes de formulario "registro" y "login"
+- [x] creación bade de datos "AstroDB"
+- [x] EndPoint registro
+- [x] rutas de botones aregladas
+
+Solucionar:
+
+- [x] EndPoint Login

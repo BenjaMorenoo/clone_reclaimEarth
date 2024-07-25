@@ -1,5 +1,6 @@
 ---
-import Card from "../components/Card.astro";
+import Form from "../components/FormLogin.astro";
+
 interface Props {
   title: string;
 }
@@ -26,10 +27,7 @@ const { title } = Astro.props;
         </div>
       </nav>
       <main class="[grid-area:main] bg-verdeMain">
-        <Card
-          title="¿Qué es ReclaimEarth?"
-          body="Somos una innovadora plataforma de reciclaje que fomenta este hábito en la comunidad. Mediante recompensas para usuarios activos, buscamos incentivar el reciclaje y la conciencia ambiental."
-        />
+        <Form />
       </main>
     </div>
     <slot />

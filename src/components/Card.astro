@@ -1,31 +1,25 @@
 ---
-import BotonIniciarSesion from './Boton_iniciar_sesion.astro';
-import BotonRegistrarte from './Boton_registrarte.astro';
+import BotonIniciarSesion from "./Boton_iniciar_sesion.astro";
+import BotonRegistrarte from "./Boton_registrarte.astro";
 interface Props {
   title: string;
   body: string;
 }
 
-const { title, body} = Astro.props;
+const { title, body } = Astro.props;
 ---
-
 
 <li class="link-card mx-auto my-10 p-4 max-w-6xl">
   <div class="botones max auto my-8 space-x-4 px-6 py-3 text-lg">
     <section class="">
-      <BotonIniciarSesion
-        titleButton='Iniciar Sesión'
-        href='http://reclaimearth.000webhostapp.com/src/login.php'
-      />
+      <BotonIniciarSesion titleButton="Iniciar Sesión" href="/login" />
     </section>
     <section>
-      <BotonRegistrarte
-      titleButton='Registrarse'
-      href='#'
-    />
+      <BotonRegistrarte titleButton="Registrarse" href="/register" />
     </section>
   </div>
-  <h2 class="text-lg font-italic mb-2">
+  <p id="quote">Aquí aparecerá una frase aleatoria.</p>
+  <h2 class="text-lg font-bold mb-2">
     {title}
     <span></span>
   </h2>
@@ -44,15 +38,16 @@ const { title, body} = Astro.props;
     background-color: white;
     border-radius: 7px;
     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   .link-card > h2 {
     margin: 0;
     font-size: 2rem;
-    color: #4CAF50;
+    color: #4caf50;
   }
   .link-card > p {
     margin-top: 0.5rem;
-	  text-align: center;
+    text-align: center;
     margin-bottom: 0;
     padding-bottom: 50px;
   }
@@ -60,7 +55,14 @@ const { title, body} = Astro.props;
   .botones {
     display: flex;
     justify-content: space-around;
-    
   }
 
+  #quote {
+    color: #009ac0;
+    font-style: italic;
+  }
+
+  h2 {
+    font-weight: 500;
+  }
 </style>
