@@ -15,7 +15,7 @@ Avance del proyecto:
 - [x] Crear los componentes
 - [x] Crear el layout
 - [x] Componentes de formulario "registro" y "login"
-- [x] creación bade de datos "AstroDB"
+- [x] creación base de datos "AstroDB"
 - [x] EndPoint registro
 - [x] rutas de botones aregladas
 
