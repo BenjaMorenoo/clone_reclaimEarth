@@ -18,6 +18,7 @@ Avance del proyecto:
 - [x] creación base de datos "AstroDB"
 - [x] EndPoint registro
 - [x] rutas de botones aregladas
+- [x] Adaptador vercel
 
 Solucionar:
 
